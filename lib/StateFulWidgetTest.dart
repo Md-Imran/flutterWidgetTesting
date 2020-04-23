@@ -9,12 +9,14 @@ class MyApp extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return MyAppState();
+    return _MyAppState();
   }
 
 
 }
-class MyAppState extends State<MyApp>{
+
+// this is private clasee because we use '_' (userscore) sign before the MyAppState class
+class _MyAppState extends State<MyApp>{
 var questionVariable=0;
   void answerQuestion() {
     setState(() {
