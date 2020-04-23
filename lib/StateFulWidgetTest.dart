@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterapp/Question.dart';
 
 void main(){
   runApp(MyApp());
@@ -28,7 +29,7 @@ var questionVariable=0;
   @override
   Widget build(BuildContext context) {
     var question = [
-      'what\'s your first questio,',
+      'what\'s your favorite color ?',
       'what\'s your second question'
     ];
     // TODO: implement build
@@ -39,16 +40,16 @@ var questionVariable=0;
           ),
           body: Column(
             children: <Widget>[
-              Text(question.elementAt(0)),
+              Question(question.elementAt(0)),
               RaisedButton(
-                  child: Text('Question 1 : What\'s your name buddy'),
+                  child: Text('Question 1'),
                   onPressed: answerQuestion),
               RaisedButton(
-                child: Text('Question 2 : Whats\; your age '),
+                child: Text('Question 2'),
                 onPressed: () => print('Answer 2 chossen'),
               ),
               RaisedButton(
-                child: Text('Question 3 : There is no question '),
+                child: Text('Question 3'),
                 onPressed: (answerQuestion) ,
               )
             ],
