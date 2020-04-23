@@ -42,14 +42,14 @@ var questionVariable=0;
             children: <Widget>[
               Question(question.elementAt(0)),
               RaisedButton(
-                  child: Text('Question 1'),
+                  child: Text('Answer 1'),
                   onPressed: answerQuestion),
               RaisedButton(
-                child: Text('Question 2'),
+                child: Text('Answer 2'),
                 onPressed: () => print('Answer 2 chossen'),
               ),
               RaisedButton(
-                child: Text('Question 3'),
+                child: Text('Answer 3'),
                 onPressed: (answerQuestion) ,
               )
             ],
